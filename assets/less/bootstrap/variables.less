@@ -2,6 +2,11 @@
 // Variables
 // --------------------------------------------------
 
+@font-face {
+	font-family: "Pricedown";
+	src: url("@{icon-font-path}/pricedown-bl.otf") format("otf");
+	src: url("@{icon-font-path}/pricedown-bl.ttf") format("ttf");
+}
 
 //== Colors
 //
@@ -44,6 +49,7 @@
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
+@font-family-secondary:   "Pricedown", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 @font-size-base:          14px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
@@ -62,7 +68,7 @@
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
-@headings-font-family:    inherit;
+@headings-font-family:    @font-family-secondary;
 @headings-font-weight:    500;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
